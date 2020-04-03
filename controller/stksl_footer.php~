@@ -1,0 +1,11 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$diccFooter = array(
+'footer01'=>'--  steflink segurity login  --');
+$footer = file_get_contents('vista/html/stksl_footer.html');
+foreach ($diccFooter as $clave=>$valor) {
+$footer = str_replace('{'.$clave.'}', $valor, $footer);
+}
+print $footer;
+?>

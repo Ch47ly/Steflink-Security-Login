@@ -1,0 +1,6 @@
+<div class="dino-contenedor">
+<div class="dino-col-9">
+<h3 class="dino-text-center">{text00}</h3>
+<h3 class="dino-text-center">{text01}</h3>
+</div>
+</div>

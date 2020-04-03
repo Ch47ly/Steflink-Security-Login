@@ -1,0 +1,1339 @@
+/*************   DINO **************/
+/*Pequeña Libreria para el estudio de intefacez en el diseño web*/
+/*Autor:Ch47ly-Gallardo Armando Carlos*/
+
+
+/*TIPOGRAFÍA DINO*/
+
+@font-face {
+    font-family: UbuntuRegular;
+    src: url(dino_fonts/Ubuntu-R.ttf);
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url(dino_fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(dino_fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Alba;
+    src: url(dino_fonts/ALBA____.TTF);
+}
+@font-face {
+    font-family: bauhaus;
+    src: url(dino_fonts/bauhaus.ttf);
+}
+@font-face {
+    font-family: orbitron;
+    src: url(dino_fonts/Orbitron-Regular.ttf);
+}
+body
+{
+font-family:MontserratRegular;
+/*font-family:MontserratExtraBold;*/
+/*font-family:UbuntuRegular;*/
+}
+
+/*TEXTO*/
+h1 {
+font-family:MontserratExtraBold;
+}
+.dino-text-center {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-left {
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-right {
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-textbauhaus{
+font-family: bauhaus;
+color: #474747;
+text-decoration: none;
+}
+.dino-textcasiopea{
+font-family: orbitron;
+color: #474747;
+text-decoration: none;
+}
+.dino-textcolor-negro{
+color:#000000;
+}
+.dino-textcolor-blanco{
+color:#ffffff;
+}
+
+/*CONTENEDOR*/
+
+.dino-contenedor{
+ display:block;
+overflow-x:auto;
+
+margin-left:-8px;	
+margin-right:-8px; 
+}
+.dino-contenedorB{
+width:97.5%;
+ padding-right: 15px;
+  padding-left: 15px;
+	margin-right: auto;
+  margin-left: auto;
+  display:inline-block;
+}
+/*GRILLA-10-*/
+
+.dino-col-1{
+ width: 11.11%;
+
+}
+.dino-col-2{
+ width: 22.22%;
+
+}
+.dino-col-3{
+ width: 33.33%;
+}
+.dino-col-4{
+ width: 44.44%;
+}
+.dino-col-5{
+ width: 55.55%;
+}
+.dino-col-6{
+ width: 66.66%;
+}
+.dino-col-7{
+ width: 77.77%;
+}
+.dino-col-8{
+ width: 88.88%;
+}
+.dino-col-9{
+ width: 99.99%;
+
+}
+
+[class^=dino-col]{
+ float:left;
+ height:auto;
+padding-right: 5px;
+padding-left: 5px;
+margin-right: auto;
+margin-left: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+@media all and (max-width: 700px) {
+    [class^=dino-col]{
+	width: 99.99%;
+        margin:0px;
+        padding:0px;
+        
+        display:block;
+        float:none;
+        text-align:center;
+
+    }
+}
+
+/*imagen*/
+.dino-img{
+max-width: 100%;
+height:auto;
+}
+/*ESTILOS DE MENUS*/
+/*DINO-MENU-LDVTEST*/
+.testA {
+  text-align:center;
+  font-size:13px;
+}
+
+.testA a{
+color:#000000;
+padding: 10px 15px 2px;
+text-decoration:none;
+}
+.testA a:hover {
+  background-color:#000000;
+  color:#ffffff;
+}
+.dino-menu-ldvTest {
+
+    display:inline-block;
+}
+.dino-menu-ldvTest li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+.dino-menu-ldvTest li a{
+  text-decoration:none;
+	
+  display: inline-block;
+  padding: 10px 15px;
+  color:#000000;
+  transition: 0.3s;
+  font-size:13px;
+}
+/*DINO-MENU-LDVWHITE*/
+/************************/
+menu-ldvW {
+  text-align:center;
+}
+.dino-menu-ldvW {
+background-color:#ffffff;
+  padding-right:0px;
+  padding-left:0px;
+  margin-left:-8px;	
+  margin-right:-8px;
+  font-size:13px;
+  display:block;
+  overflow-x:auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  text-align:center;
+  display:inline-block;
+}
+
+.dino-menu-ldvW li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+   
+.dino-menu-ldvW li a{
+  text-decoration:none;
+	
+  display: inline-block;
+  padding: 10px 15px;
+  color:#000000;
+  transition: 0.3s;
+}
+
+.dino-menu-ldvW li a:hover {
+  background-color:#000000;
+  color:#ffffff;
+}
+.dino-menu-ldvW li.dino-icon-menu{
+  display: none;
+  border: 2px solid #000000;
+}
+@media screen and (max-width:680px) {
+  ul.dino-menu-ldvWli {display: none;}
+  ul.dino-menu-ldvW li.dino-icon-menu {
+    float: right;/*mover el icon a la derecha*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.dino-menu-ldvW.responsive {position: relative;}
+  ul.dino-menu-ldvW.responsive li.dino-icon-menu {
+    right: 0;
+    top: 0;
+  }
+  ul.dino-menu-ldvW.responsive li {
+    float: none;
+    display: inline;
+  	
+  }
+  
+  ul.dino-menu-ldvW.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+ ul.dino-menu-ldvW li ul.dropdown-content {
+    position:relative;
+  }
+}
+/*DINO-MENU-CLASSIC-A*/
+
+.dino-menu-classicAL{
+	width: 44.44%;
+}
+.dino-menu-classicAM{
+	width: 55.55%;
+}
+[class^=dino-menu]{
+	float:left;
+	height:auto;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dino-button-menu-classicA {
+	background-color: white;
+	color: black;
+	border: none;
+	font-size:17px;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.dino-button-menu-classicA:hover {
+    background-color: #000000;
+    color:#ffffff;
+} 
+.dino-button-menu-classicAI:hover {
+    background-color: #000000;
+    color:#ffffff;
+} 
+.dino-button-menu-classicAI {
+	background-color: white;
+	color: black;
+	border: none;
+	font-size:17px;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width:680px) {
+  .dino-menu-classicA {
+	float: right;
+  }
+  .dino-button-menu-classicA{
+	display: none;
+  }
+  .dino-button-menu-classicAI {
+  	display: inline-block;
+  }
+}
+.dino-menu-classicA {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.dino-menu-classicA a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dino-menu-classicA a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dino-menu-classicA .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .dino-menu-classicA a {display: none;}
+  .dino-menu-classicA a.icon {
+    float: right;
+    display: block;
+  }
+  .dino-menu-classicA a.icon:hover {
+    background-color: #ffffff;
+  color: #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dino-menu-classicA.responsive {position: relative;}
+  .dino-menu-classicA.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .dino-menu-classicA.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*ESTILOS DE BANNERS*/
+/*DINO-BANNER-CLASSIC-A*/
+.parent2 {
+position: relative;
+}
+.child2 {
+  position: absolute;
+  border: 1px solid red;
+  top: 200px;
+  left: 550px;
+}
+/*ESTILOS DE BOTONES*/
+/*DINO-BOTON-CLASICO01*/
+.dino-boton-clasico1 {
+	
+ background-color: white;
+    border: 2px solid #000000;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico1:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+/*ESTILOS DE SLIDESHOW*/
+/*DINO-SDSHOW-CLASSIC-A*/
+
+.mySlides {
+display:none;
+}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+/*DINO-BOTON-CLASICO01-BLOQUE*/
+.dino-boton-clasico1-bloque {
+	width: 100%;
+ background-color: white;
+    border: 2px solid #000000;
+     color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico1-bloque:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO02*/
+.dino-boton-clasico2 {
+	
+ background-color: #000000;
+    border: 2px solid #ffffff;
+     color: #ffffff;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico2:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+/*DINO-BOTON-CLASICO02-BLOQUE*/
+.dino-boton-clasico2-bloque {
+	width: 100%;
+ background-color:#000000;
+    border: 2px solid #ffffff;
+     color: #ffffff;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico2-bloque:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+/*DINO-BOTON-CLASICO03*/
+.dino-boton-clasico3 {
+	
+ background-color: white;
+    border: 2px solid #000000;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO-BLOQUE*/
+.dino-boton-clasico3-bloque {
+	width: 100%;
+ background-color: white;
+    border: 2px solid #000000;
+     color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3-bloque:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO02-AZUL*/
+.dino-boton-clasico2-azul {
+	
+ background-color: #1549cb;
+    border: 2px solid #1549cb;
+     color: #ffffff;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico2-azul:hover {
+    background-color:#ffffff ;
+    color:#1549cb;
+}
+/*DINO-BOTON-CLASICO-AZUL-BLOQUE*/
+.dino-boton-clasico2-azul-bloque {
+	width: 100%;
+ background-color: #1549cb;
+    border: 2px solid #1549cb;
+     color: #ffffff;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico2-azul-bloque:hover {
+    background-color: #ffffff;
+    color:#1549cb;
+}
+/*DINO-BOTON-CLASICO03-AZUL*/
+.dino-boton-clasico3-azul {
+	
+ background-color: white;
+    border: 2px solid #1549cb;
+     color: #1549cb;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3-azul:hover {
+    background-color: #1549cb;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO-AZUL-BLOQUE*/
+.dino-boton-clasico3-azul-bloque {
+	width: 100%;
+ background-color: white;
+    border: 2px solid #1549cb;
+     color: #1549cb;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3-azul-bloque:hover {
+    background-color: #1549cb;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO03-ROJO*/
+.dino-boton-clasico3-rojo {
+	
+ background-color: white;
+    border: 2px solid #e80000;
+     color: #e80000;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3-rojo:hover {
+    background-color: #e80000;
+    color:#ffffff;
+}
+/*DINO-BOTON-CLASICO-ROJO-BLOQUE*/
+.dino-boton-clasico3-rojo-bloque {
+	width: 100%;
+ background-color: white;
+    border: 2px solid #e80000;
+     color: #e80000;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-clasico3-rojo-bloque:hover {
+    background-color: #e80000;
+    color:#ffffff;
+}
+
+/*BOTON DINO-IT*/
+
+.dino-boton-it {
+ background-color:#ffffff;
+    border: 2px solid #ff0000;
+     color: #ff0000;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-it:hover {
+    background-color: #ff0000;
+    color:#ffffff;
+}
+.dino-boton-it-bloque {
+	width: 100%;
+ background-color:#ffffff;
+    border: 3px solid #ff0000;
+     color: #ff0000;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 18px;
+    margin: 4px 2px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-it-bloque:hover {
+  background-color: #ff0000;
+    color:#ffffff;
+}
+/*BOTON DINO-UFO-A*/
+.dino-boton-ufoA {
+ background-color:#ffffff;
+    border: 2px solid #00ff00;
+     color: #00e000;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-ufoA:hover {
+    background-color: #00ff00;
+    color:#000000;
+}
+.dino-boton-ufoA-bloque {
+	width: 100%;
+ background-color:#ffffff;
+    border: 3px solid #00ff00;
+     color: #25d425;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-ufoA-bloque:hover {
+  background-color: #00ff00;
+    color:#000000;
+}
+/*BOTON DINO-UFO-B*/
+.dino-boton-ufoB {
+ background-color:#000000;
+    border: 2px solid #00ff00;
+     color: #00e000;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-ufoB:hover {
+    background-color: #00ff00;
+    color:#000000;
+}
+.dino-boton-ufoB-bloque {
+	width: 100%;
+ background-color:#ffffff;
+    border: 3px solid #00ff00;
+     color: #25d425;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-ufoB-bloque:hover {
+  background-color: #00ff00;
+    color:#000000;
+}
+/*DINO-BOTON-SHOP*/
+.dino-boton-shop {
+	
+ background-color: white;
+    border: 2px solid #0c2342;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;  
+    border-radius:6px;	
+}
+
+.dino-boton-shop:hover {
+    background-color: #9e2f36;
+    color:#ffffff;
+}
+/*DINO-BOTON-SHOP-BLOQUE*/
+.dino-boton-shop-bloque {
+	width: 100%;
+ background-color: white;
+    border: 2px solid #0c2342;
+     color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:6px;
+}
+
+.dino-boton-shop-bloque1:hover {
+    background-color: #9e2f36;
+    color:#ffffff;
+} 
+/*DINO-BOTON-BAUHAUS A*/
+.dino-boton-bauhausA {
+font-family: bauhaus;
+
+ background-color: white;
+    border: 2px solid #474747;
+    color: #474747;	
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-bauhausA:hover {
+    background-color: #474747;
+    color:#ffffff;
+}
+/*DINO-BOTON-BAUHAUS A-BLOQUE*/
+.dino-boton-bauhausA-bloque {
+font-family: bauhaus;
+	width: 100%;
+ background-color: white;
+    border: 2px solid #474747;
+     color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-bauhausA-bloque:hover {
+    background-color:#474747;
+    color:#ffffff;
+}
+/*DINO-BOTON-BAUHAUS B*/
+.dino-boton-bauhausB {
+font-family: bauhaus;
+
+ background-color: #474747;
+    border: 2px solid #ffffff;
+    color: #ffffff;	
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-bauhausB:hover {
+    background-color:#ffffff;
+    color: #474747;
+}
+/*DINO-BOTON-BAUHAUS B-BLOQUE*/
+.dino-boton-bauhausB-bloque {
+font-family: bauhaus;
+	width: 100%;
+ background-color:#474747;
+    border: 2px solid #ffffff;
+     color:#ffffff;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:6px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-boton-bauhausB-bloque:hover {
+    background-color:#ffffff;
+    color:#474747;
+}
+
+
+/*DINO FORMULARIO*/
+/*LOGIN 1*/
+
+.dino-form-login1{
+border: 2px solid #000000;
+     color: black;
+   padding: 4px 20px;
+
+}
+.dino-form-login1Title{
+font-family: MontserratExtraBold;
+}
+.dino-form-login1Bot{
+border: 2px solid #000000;
+     color: black;
+   padding: 4px 20px;
+}
+.dino-form-login1Bot:hover{
+background-color: #000000;
+    color:#ffffff;
+    cursor: pointer;
+}
+/*LOGIN 2*/
+.dino-form-login2{
+background:#000000;
+border: 2px solid #ffffff;
+     color: #ffffff;
+   padding: 4px 20px;
+
+}
+.dino-form-login2Bot{
+border: 2px solid #ffffff;
+background:#000000;
+     color: #ffffff;
+   padding: 4px 20px;
+}
+.dino-form-login2Bot:hover{
+background-color: #ffffff;
+    color:#000000;
+    cursor: pointer;
+}
+
+/*LOGIN 3*/
+.dino-form-login3{
+border: 2px solid #000000;
+     color: black;
+   padding: 4px 20px;
+   border-radius:6px;
+
+}
+.dino-form-login3Bot{
+border: 2px solid #000000;
+     color: black;
+   padding: 4px 20px;
+    border-radius:6px;
+}
+.dino-form-login3Bot:hover{
+background-color: #000000;
+    color:#ffffff;
+    cursor: pointer;
+}
+/*LOGIN BAUHAUS*/
+.dino-form-bauhaus{
+font-family: bauhaus;
+color: #474747;
+
+}
+.dino-form-bauhausBot{
+border: 2px solid #474747;
+     color: #474747;
+   padding: 3px 20px;
+    border-radius:6px;
+text-decoration: none;
+}
+.dino-form-bauhausBot:hover{
+background-color: #474747;
+    color:#ffffff;
+    cursor: pointer;
+}
+/*DINO GALERIA*/
+
+.dino-galeria-3 {
+width: 33.33%;
+
+}
+.dino-img-galeria {
+max-width: 100%;
+height:auto;
+border: 2px solid #000000;
+ border-radius:2em;
+}
+.dino-img-descripcion {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #000000;
+ border-radius:1em;
+
+}
+[class^=dino-galeria]{
+ float:left;
+ height:auto;
+padding-right: 5px;
+padding-left: 5px;
+margin-right: auto;
+margin-left: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+/*CARRUSEL 4 IMAGENES*/
+.dino-carrusel-contenedor{
+
+display:block;
+overflow-x:auto;
+margin-left:-8px;	
+margin-right:-8px; 
+}
+.dino-carrusel
+{
+	width: 100%;
+	margin-left:-8px;	
+	margin-right:-8px; 
+	overflow: hidden;
+}
+.dino-carrusel ul {
+       display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: dinoCambia 20s infinite alternate linear;
+}
+.dino-carrusel li {
+	width: 100%;
+	list-style: none;
+	
+}
+
+.dino-a-carrusel {
+	width: 100%;
+	color:#000000;
+	text-decoration: none;
+	font-size: 20px;
+}
+.dino-a-carrusel:hover {
+	opacity: 0.5;
+    	filter: alpha(opacity=50);
+}
+
+@keyframes dinoCambia {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*DINO SWITCH*/
+.dino-switch {
+background-color:#ffffff;
+
+}
+
+/*DINO MENUS*/
+/*DINO MENO BLANCO-NEGRO*/
+.dino-contenedor-menuBN {
+  background-color:#ffffff;
+  padding-right:0px;
+  padding-left:0px;
+  margin-left:-8px;	
+  margin-right:-8px;
+  font-size:13px;
+  display:block;
+  overflow-x:auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dino-menuBN {
+  text-align:center;
+  display:inline-block;
+}
+
+.dino-menuBN li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+   
+.dino-menuBN li a{
+  text-decoration:none;
+	
+  display: inline-block;
+  padding: 10px 15px;
+  color:#000000;
+  transition: 0.3s;
+}
+
+.dino-menuBN li a:hover {
+  background-color:#000000;
+  color:#ffffff;
+}
+.dino-menuBN li.dino-icon-menu{
+  display: none;
+  border: 2px solid #000000;
+}
+@media screen and (max-width:680px) {
+  ul.dino-menuBN li {display: none;}
+  ul.dino-menuBN li.dino-icon-menu {
+    float: right;/*mover el icon a la derecha*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.dino-menuNB.responsive {position: relative;}
+  ul.dino-menuNB.responsive li.dino-icon-menu {
+    right: 0;
+    top: 0;
+  }
+  ul.dino-menuBN.responsive li {
+    float: none;
+    display: inline;
+  	
+  }
+  
+  ul.dino-menuBN.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+ ul.dino-menuBN li ul.dropdown-content {
+    position:relative;
+  }
+}
+/*DINO MENU NEGRO-BLANCO*/
+.dino-contenedor-menuNB {
+  background-color:#000000;
+  padding-right:0px;
+  padding-left:0px;
+  margin-left:-8px;	
+  margin-right:-8px;
+  font-size:13px;
+  display:block;
+  overflow-x:auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dino-menuNB {
+  text-align:center;
+  display:inline-block;
+}
+
+.dino-menuNB li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+   
+.dino-menuNB li a{
+  text-decoration:none;
+	
+  display: inline-block;
+  padding: 10px 15px;
+  color:#ffffff;
+  transition: 0.3s;
+}
+
+.dino-menuNB li a:hover {
+  background-color:#ffffff;
+  color:#000000;
+}
+.dino-menuNB li.dino-icon-menu{
+  display: none;
+  border: 2px solid #ffffff;
+}
+@media screen and (max-width:680px) {
+  ul.dino-menuNB li {display: none;}
+  ul.dino-menuNB li.dino-icon-menu {
+    float: right;/*mover el icon a la derecha*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.dino-menuNB.responsive {position: relative;}
+  ul.dino-menuNB.responsive li.dino-icon-menu {
+    right: 0;
+    top: 0;
+  }
+  ul.dino-menuNB.responsive li {
+    float: none;
+    display: inline;
+  	
+  }
+  
+  ul.dino-menuNB.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+ ul.dino-menuNB li ul.dropdown-content {
+    position:relative;
+  }
+}
+/*DINO MENU DINOSHOP*/
+.dino-contenedor-menuSHOP {
+  background-color:#ffffff;
+  padding-right:0px;
+  padding-left:0px;
+  margin-left:-8px;	
+  margin-right:-8px;
+  font-size:13px;
+  border-top:6px solid #9e2f36;
+  border-bottom:10px solid #0c2342;	
+  display:block;
+  overflow-x:auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dino-menuSHOP {
+  text-align:center;
+  display:inline-block;
+}
+
+.dino-menuSHOP li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+   
+.dino-menuSHOP li a{
+  text-decoration:none;
+  display: inline-block;
+  padding: 10px 15px;
+  color:#0c2342;
+  transition: 0.3s;
+}
+
+.dino-menuSHOP li a:hover {
+  background-color:#9e2f36;
+  color:#ffffff;
+}
+.dino-menuSHOP li.dino-icon-menu{
+  display: none;
+  border: 2px solid #0c2342;
+}
+@media screen and (max-width:680px) {
+  ul.dino-menuSHOP li {display: none;}
+  ul.dino-menuSHOP li.dino-icon-menu {
+    float: right;/*mover el icon a la derecha*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.dino-menuSHOP.responsive {position: relative;}
+  ul.dino-menuSHOP.responsive li.dino-icon-menu {
+    right: 0;
+    top: 0;
+  }
+  ul.dino-menuSHOP.responsive li {
+    float: none;
+    display: inline;
+  	
+  }
+  
+  ul.dino-menuSHOP.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+ ul.dino-menuSHOP li ul.dropdown-content {
+    position:relative;
+  }
+}
+/*DINO MENU DINOUFO*/
+.dino-contenedor-menuUFO {
+  background-color:#000000;
+  padding-right:0px;
+  padding-left:0px;
+  margin-left:-8px;	
+  margin-right:-8px;
+  font-size:13px;
+  	
+  display:block;
+  overflow-x:auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dino-menuUFO {
+  text-align:center;
+  display:inline-block;
+}
+
+.dino-menuUFO li{
+  position:relative;
+  list-style-type:none;
+  float:left;
+}
+   
+.dino-menuUFO li a{
+  text-decoration:none;
+  display: inline-block;
+  padding: 10px 15px;
+  color:#00ff00;
+  transition: 0.3s;
+}
+
+.dino-menuUFO li a:hover {
+  background-color:#00ff00;
+  color:#000000;
+}
+.dino-menuUFO li.dino-icon-menu{
+  display: none;
+  border: 2px solid #0c2342;
+}
+@media screen and (max-width:680px) {
+  ul.dino-menuUFO li {display: none;}
+  ul.dino-menuUFO li.dino-icon-menu {
+    float: right;/*mover el icon a la derecha*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.dino-menuUFO.responsive {position: relative;}
+  ul.dino-menuUFO.responsive li.dino-icon-menu {
+    right: 0;
+    top: 0;
+  }
+  ul.dino-menuUFO.responsive li {
+    float: none;
+    display: inline;
+  	
+  }
+  
+  ul.dino-menuUFO.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+ ul.dino-menuUFO li ul.dropdown-content {
+    position:relative;
+  }
+}

@@ -1,0 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+include '../modelo/class_security_login.php';
+session_start();
+$usuario = new SecurityLogin;
+$usuario->CloseSession();
+?>

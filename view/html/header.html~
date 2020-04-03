@@ -1,0 +1,11 @@
+<div class="dino-contenedor">
+<div class="dino-col-3">
+<p>{headerIz}</p>
+</div><!-- class="col-3" -->
+<div class="dino-col-3">
+<h3 class="dino-text-center dino-textbauhaus">{headerCen01}</h3>
+</div><!-- class="col-3" -->
+<div class="dino-col-3">
+<p class="dino-text-center dino-textbauhaus"><a type="button" href="#" onclick="Csessio()">{headerDer}</a></p>
+</div><!-- class="col-3" -->
+</div><!-- class="dino-contenedor" -->

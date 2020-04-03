@@ -1,0 +1,11 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$diccionario = array(
+'headerIz'=>'','headerCen01'=>'STEFLINK SECURITY LOGIN','headerDer'=>'cerrar sesion');
+$header = file_get_contents('vista/html/stksl_header.html');
+foreach ($diccionario as $clave=>$valor) {
+$header = str_replace('{'.$clave.'}', $valor, $header);
+}
+print $header;
+?>

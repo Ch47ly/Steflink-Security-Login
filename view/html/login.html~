@@ -1,0 +1,13 @@
+<div class="dino-contenedor">
+<div class="dino-col-9">
+<form class="dino-form-bauhaus">
+<h3 class="dino-text-center">{login01}</h3>
+<p class="dino-text-center">{login02}</p>
+<p class="dino-text-center"><input class="dino-form-bauhaus" type="email" name="mail" id="mail"></p>
+<p class="dino-text-center">{login03}</p>
+<p class="dino-text-center"><input class="dino-form-bauhaus" type="password" name="pass" id="pass"></p>
+<p class="dino-text-center"><input class="dino-form-loginbauhausBot" type="button" value="intro" onclick="Login()"></p>
+</form>
+</div>
+</div>
+

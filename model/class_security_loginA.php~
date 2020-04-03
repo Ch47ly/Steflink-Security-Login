@@ -1,0 +1,72 @@
+<?php
+/*******************************************************************************
+* 			STEFLINK SECURITY LOGIN                                *
+*                                                                              *
+* Version: 1.0                                                                 *
+* Date:    2018                                                                *
+* Author:  CH47LY                                                              * 
+* License: GPL                                                                 *
+*******************************************************************************/
+
+require_once('../core/class_abstrac_conexion.php');
+class SecurityLogin extends ConexionDB {
+	public   $mail;
+	private  $pass;
+	private  $pass2;
+	
+public function Login(){
+	$this->mail=$_REQUEST['mail'];
+	$this->pass=$_REQUEST['pass'];
+	$this->tbname="Administrador";
+	$this->consulta="SELECT * FROM $this->tbname WHERE mail =
+'$this->mail'";
+$this->VerificarDatos();
+$this->pass2=$this->row["pass"];
+if (password_verify($this->pass, $this->pass2)) {
+    		$_SESSION['pass']=$this->pass;
+		$_SESSION['mail']=$this->mail;
+		$_SESSION['nombre']=$this->row["nombre"];
+		echo "PANEL";
+		
+		}
+	else {
+		echo "NO SE PUEDE LOGEAR/INCORECTO PASS O MAIL";
+		}
+
+}
+public function VerifySession() {
+	if (isset($_SESSION['pass'])) {
+		$this->pass=$_SESSION['pass'];
+		$this->mail=$_SESSION['mail'];
+		$this->tbname="Administrador";
+		$this->consulta="SELECT * FROM $this->tbname WHERE mail =
+'$this->mail'";
+		$this->VerificarDatos();
+		$this->pass2=$this->row["pass"];
+			if (password_verify($this->pass, $this->pass2)) {
+    				echo"ESTA LOGUEADO";
+								
+			} 
+			else {
+				echo"DEBE VOLVER A LOGEARSE";
+				echo $this->pass2;
+				echo"<br>";
+				
+			}
+		
+	}
+	else {
+	//session_destroy() ;
+	//header("Location: " .$_SESSION['urla']);
+	echo "DEBE VOLVE A LOGEARSE";
+	}
+
+}
+
+public function CerrarSessionNegocio() {
+session_destroy() ;
+header("Location: " .$_SESSION['urla']);
+}
+
+
+}

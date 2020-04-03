@@ -1,0 +1,12 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+//VIENE DEL MODELO ../VISTA
+$diccUsPassNotMach = array(
+'text00'=> '!!!LA SESIÓN ESTÁ CAIDA!!!','text01'=> 'DEBE RECARGAR LA PÁGINA PARA VOLVER A LOGEARSE');
+$UsPassNotMach = file_get_contents('vista/html/sessionDown.html');
+foreach ($diccUsPassNotMach as $clave=>$valor) {
+$UsPassNotMach = str_replace('{'.$clave.'}', $valor, $UsPassNotMach);
+}
+print $UsPassNotMach;
+?>

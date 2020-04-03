@@ -1,0 +1,11 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$diccLogin = array(
+'login01'=> 'LOGIN','login02'=> 'mail','login03'=> 'password');
+$Login = file_get_contents('view/html/stksl_login.html');
+foreach ($diccLogin as $clave=>$valor) {
+$Login = str_replace('{'.$clave.'}', $valor, $Login);
+}
+print $Login;
+?>

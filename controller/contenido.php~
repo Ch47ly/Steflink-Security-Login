@@ -1,0 +1,13 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$_SESSION['urla2']=$_SERVER['REQUEST_URI'];
+if (isset($_SESSION['mail'])) {
+ 
+include ("verifySession.php");
+
+}
+else {
+include ("login.php");
+}
+?>

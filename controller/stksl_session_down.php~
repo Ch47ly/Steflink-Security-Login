@@ -1,0 +1,12 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+//VIENE DEL MODELO ../VISTA
+$diccSdown = array(
+'text00'=> 'SESSION DOWN!!!','text01'=> 'REFRESH WEBSITE');
+$SessionDown = file_get_contents('view/html/stksl_sessionDown.html');
+foreach ($diccSdown as $clave=>$valor) {
+$SessionDown = str_replace('{'.$clave.'}', $valor, $SessionDown);
+}
+print $SessionDown;
+?>
